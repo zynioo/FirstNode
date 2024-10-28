@@ -1,7 +1,8 @@
 let i=1;
 let interval = setInterval(()=>{
-    console.log(i++);
-    if(i>5){
-        clearInterval(interval);
-    }
+    let date = new Date();
+
+    let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    console.clear();
+    console.log(time);
 },1000)
